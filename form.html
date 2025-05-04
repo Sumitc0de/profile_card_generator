@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Profile-Card-generator</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h2>Create Profile Card</h2>
+    <form id="profileForm">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" placeholder="Enter full name" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" placeholder="Enter age" required>
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" placeholder="+91 9876543210" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="your@email.com" required>
+
+      <label for="profession">Profession</label>
+      <input type="text" id="profession" placeholder="e.g., Frontend Developer" required>
+
+      <label for="profileImage">Profile Image URL</label>
+      <input type="url" id="profileImage" placeholder="Paste image URL" required>
+
+      <label for="facebook">Facebook URL</label>
+      <input type="url" id="facebook" placeholder="https://facebook.com/yourprofile">
+
+      <label for="twitter">Twitter URL</label>
+      <input type="url" id="twitter" placeholder="https://twitter.com/yourprofile">
+
+      <label for="instagram">Instagram URL</label>
+      <input type="url" id="instagram" placeholder="https://instagram.com/yourprofile">
+
+      <label for="youtube">YouTube URL</label>
+      <input type="url" id="youtube" placeholder="https://youtube.com/yourchannel">
+
+      <button type="submit">Generate Card</button>
+    </form>
+  </div>
+
+  <!-- Include html2canvas from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
